@@ -1,0 +1,127 @@
+.progects-section {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 140px;
+
+    &__hr {
+        color: #364258;
+        width: 100px;
+        height: 1px;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: #364258;
+        font-weight: 700;
+        font-size: 44px;
+        width: 900px;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+.trade-center {
+    margin-top: 100px;
+    height: 550px;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 140px;    
+
+    &__shadow {
+        background: url('../images/Back.png') no-repeat;
+        background-size: cover;
+        width: 585px;
+        height: 470px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    &__image {
+        background: url('../images/Frame1.png') no-repeat;
+        background-size: cover;
+        width: 630px;
+        height: 470px;
+        position: absolute;
+        left: 215px;
+        top: 70px;
+    }
+
+    &__info {
+        width: 630px;
+        margin-right: 225px;
+    }
+}
+
+.commerce-center {
+    display: flex;
+    height: 550px;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__shadow {
+        background: url('../images/Back2.png') no-repeat;
+        background-size: cover;
+        width: 585px;
+        height: 470px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &__image {
+        background: url('../images/Frame2.png') no-repeat;
+        background-size: cover;
+        width: 630px;
+        height: 470px;
+        position: absolute;
+        right: 205px;
+        top: 70px;
+    }
+
+    &__info {
+        width: 630px;
+        margin-left: 375px;
+    }
+}
+
+.pre-title__info {
+    font-size: 22px;
+    color: #364258;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.title__info {
+    font-size: 44px;
+    font-weight: 900px;
+    color: #364258;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.text__info {
+    width: 450px;
+    height: 80px;
+    overflow: hidden;
+    margin-bottom: 35px;
+}
+
+.more-dateils-btn {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    width: 190px;
+    height: 50px;
+}
+
+.more {
+    overflow: auto;
+    height: 150px;
+
+}

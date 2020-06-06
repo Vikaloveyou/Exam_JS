@@ -1,0 +1,128 @@
+.header-section {
+	background: url('../images/tu-tram-pham-202263.png') no-repeat;
+    background-size: cover;
+    background-color:  rgba(116, 91, 245, 0.6);
+    height: 100%;
+    width: 100%;
+    padding: 50px 0;
+   
+
+    &__title {
+        text-transform: uppercase;
+        color: white;
+        font-weight: 700;
+        font-size: 80px;
+        width: 900px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__text {
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+        width: 900px;
+        letter-spacing: 5.4px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 230px;
+    }
+
+    &__arrow {
+        background: url('../images/arrow.png') no-repeat;
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        animation-name: move;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+        @keyframes move {
+            0% {
+                transform: translateY(0px);
+            }
+    
+            
+            50% {
+                transform: translateY(20px);
+                
+            }
+    
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    }
+}
+
+.header {
+    margin: 0 auto;
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 280px;
+
+    &__logo {
+        background: url('../images/Logo.png') no-repeat;
+        background-size: cover;
+        width: 245px;
+        height: 54px;
+    }
+
+    &__menu {
+        list-style: none;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+        font-size: 14px;
+        text-transform: uppercase;
+        
+    }
+
+    &__socials {
+        display: flex;
+        width: 160px;
+        justify-content: space-between;
+    }
+}
+
+.menu-item {
+    display: block;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.social-fb__link,
+.social-tw__link,
+.social-inst__link {
+    display: block;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+input[type="radio"].menu-switch {
+    display: block;
+    margin-right: -5px;
+    color: white;
+    width: 40px;
+}
+
+.social-fb__link {
+    background: url('../images/fb.png') no-repeat;
+}
+
+.social-tw__link {
+    background: url('../images/tw.png') no-repeat;
+}
+
+.social-inst__link {
+    background: url('../images/inst.png') no-repeat;
+   
+}
+
