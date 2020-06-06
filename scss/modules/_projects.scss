@@ -30,7 +30,8 @@
     position: relative;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 140px;    
+    margin-bottom: 140px;  
+   
 
     &__shadow {
         background: url('../images/Back.png') no-repeat;
@@ -54,7 +55,6 @@
 
     &__info {
         width: 630px;
-        margin-right: 225px;
     }
 }
 
@@ -64,6 +64,7 @@
     position: relative;
     justify-content: flex-start;
     align-items: center;
+    padding-left: 150px;
 
     &__shadow {
         background: url('../images/Back2.png') no-repeat;
@@ -87,7 +88,6 @@
 
     &__info {
         width: 630px;
-        margin-left: 375px;
     }
 }
 

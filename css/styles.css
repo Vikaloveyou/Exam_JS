@@ -286,7 +286,6 @@ input[type="radio"].menu-switch {
 
 .trade-center__info {
   width: 630px;
-  margin-right: 225px;
 }
 
 .commerce-center {
@@ -301,6 +300,7 @@ input[type="radio"].menu-switch {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 150px;
 }
 
 .commerce-center__shadow {
@@ -325,7 +325,6 @@ input[type="radio"].menu-switch {
 
 .commerce-center__info {
   width: 630px;
-  margin-left: 375px;
 }
 
 .pre-title__info {
