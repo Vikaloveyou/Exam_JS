@@ -1,128 +1,133 @@
-.header-section {
-	background: url('../images/tu-tram-pham-202263.png') no-repeat;
+#header {
+	background: url('../images/header_bg.png') no-repeat top center;
     background-size: cover;
-    background-color:  rgba(116, 91, 245, 0.6);
     height: 100%;
     width: 100%;
     padding: 50px 0;
-   
 
-    &__title {
-        text-transform: uppercase;
-        color: white;
-        font-weight: 700;
-        font-size: 80px;
-        width: 900px;
-        text-align: center;
+    .header {
         margin: 0 auto;
-    }
-
-    &__text {
-        text-transform: uppercase;
-        color: white;
-        font-size: 18px;
-        width: 900px;
-        letter-spacing: 5.4px;
-        text-align: center;
-        margin: 0 auto;
-        margin-top: 40px;
-        margin-bottom: 230px;
-    }
-
-    &__arrow {
-        background: url('../images/arrow.png') no-repeat;
-        background-size: cover;
-        width: 40px;
-        height: 40px;
-        margin: 0 auto;
-        animation-name: move;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-
-        @keyframes move {
-            0% {
-                transform: translateY(0px);
-            }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 280px;
+        
+              
+        &__menu {
+            list-style: none;
+            color: $white;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            text-transform: uppercase;  
+            font-family: $gotBook; 
+        }
     
-            
-            50% {
-                transform: translateY(20px);
+        &__socials {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .menu-item {
+            padding: 0;
+            position: relative;
+            vertical-align: middle;
+            font-size: 14px; 
+            margin: 0 35px;
+            transition: .3s;
+
+            &::before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                border: 1px solid $white;
+                border-radius: 50%;  
+                margin-right: 5px;
+                position: absolute;
+                left: -20px;
+                top: 10%;
                 
             }
-    
-            100% {
-                transform: translateY(0px);
+
+            &--active::before {
+                background-color: $white;
             }
         }
+
+        .logo {
+            width: 241px;
+            height: 54px;
+        }       
     }
+
+    .main {
+        text-align: center;
+
+        &__title {
+            text-transform: uppercase;
+            color: $white;
+            font-size: 80px;
+            text-align: center;
+            margin: 0 auto;
+            font-family: $gotBold;
+        }
+
+        &__text {
+            text-transform: uppercase;
+            color: $white;
+            font-size: 18px;
+            letter-spacing: 5.4px;
+            text-align: center;
+            margin: 40px auto 230px auto;
+            font-family: $gotBook; 
+        }
+    } 
 }
 
-.header {
-    margin: 0 auto;
-    display: flex;
-    width: 1200px;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 280px;
-
-    &__logo {
-        background: url('../images/Logo.png') no-repeat;
-        background-size: cover;
-        width: 245px;
-        height: 54px;
-    }
-
-    &__menu {
-        list-style: none;
-        color: white;
-        display: flex;
-        justify-content: space-between;
-        width: 600px;
-        font-size: 14px;
-        text-transform: uppercase;
-        
-    }
-
-    &__socials {
-        display: flex;
-        width: 160px;
-        justify-content: space-between;
-    }
-}
-
-.menu-item {
-    display: block;
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-
-.social-fb__link,
-.social-tw__link,
-.social-inst__link {
+.social__link {
     display: block;
     background-size: cover;
     width: 40px;
     height: 40px;
+    margin-right: 20px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    .facebook,
+    .twitter, 
+    .instagram {
+        width: 40px;
+        height: 40px;
+    }
+
 }
 
-input[type="radio"].menu-switch {
+.arrow {
+    fill: $white;
     display: block;
-    margin-right: -5px;
-    color: white;
-    width: 40px;
-}
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 
-.social-fb__link {
-    background: url('../images/fb.png') no-repeat;
-}
+    @keyframes move {
+        0% {
+            transform: translateY(0px);
+        }
+    
+        
+        50% {
+            transform: translateY(20px);
+            
+        }
+    
+        100% {
+            transform: translateY(0px);
+        }
+    }
 
-.social-tw__link {
-    background: url('../images/tw.png') no-repeat;
 }
-
-.social-inst__link {
-    background: url('../images/inst.png') no-repeat;
-   
-}
-

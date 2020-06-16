@@ -1,16 +1,12 @@
 'use strict';
 
-
 $(document).ready(function () {
-
-    function showDatails() {
-        $('.text__info').toggleClass('more')
-    }
-
-    $('.more-dateils-btn').click(() => {
-        showDatails()
-    })
-
-
+    $('.slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        dots: true
+    });
 
 })

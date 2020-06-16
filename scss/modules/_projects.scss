@@ -1,118 +1,135 @@
-.progects-section {
-    background-color: white;
+.progects {
+    position: relative;
+    background-color: $white;
     height: 100%;
     width: 100%;
     padding-top: 100px;
     padding-bottom: 140px;
-
-    &__hr {
-        color: #364258;
+    
+    &__hr-line {
+        color: $grey;
         width: 100px;
-        height: 1px;
+        height: 2px;
         margin-bottom: 40px;
     }
 
     &__title {
         text-transform: uppercase;
-        color: #364258;
-        font-weight: 700;
+        color: $grey;
         font-size: 44px;
-        width: 900px;
         text-align: center;
         margin: 0 auto;
         margin-bottom: 100px;
+        font-family: $gotBold;
+    }
+
+    .trade-center {
+        position: relative; 
+        margin-bottom: 170px;    
+    
+        &__shadow {
+            position: absolute;
+            background: url('../images/Back.png') no-repeat;
+            background-size: cover;
+            width: 530px;
+            height: 470px;  
+            top: 250px;
+            left: 0;      
+        }
+    
+        &__image {
+            background: url('../images/Frame1.png') no-repeat center;
+            background-size: cover;
+            width: 530px;
+            height: 470px;
+            position: absolute;
+            left: 0;
+            top: 30px;
+        }
+
+        &__info {
+            margin-top: 100px;
+        }
+    }
+
+    .commerce-center { 
+  
+        &__shadow {
+            display: block;
+            background: url('../images/Back2.png') no-repeat;
+            background-size: cover;
+            width: 530px;
+            height: 470px;     
+            position: absolute; 
+            right: 0;
+            bottom: 150px;
+        }
+    
+        &__image {
+            background: url('../images/Frame2.png') no-repeat center;
+            background-size: cover;
+            width: 530px;
+            height: 470px;
+            position: absolute;
+            right: 0;
+            z-index: 1;
+        }
+
+        &__info {
+            margin-top: 50px;
+        }    
+    }
+
+    .pre-title__info {
+        font-size: 22px;
+        color: $grey;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        font-family: $gotBook;
+    }
+    
+    .title__info {
+        font-size: 44px;
+        color: $grey;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        font-family: $gotBold;
+    }
+    
+    .text__info {
+        width: 450px;
+        height: 80px;
+        margin-bottom: 35px;
+        font-family: $openSans;
+        color: $light-grey;
+        line-height: 30px;
+    }
+    
+    .more-dateils-btn {
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        width: 190px;
+        height: 50px;
+        font-family: $gotBook;
+    }
+
+    .location {
+        font-weight: 18px;
+        color: $grey;
+        font-weight: bold;
+        font-style: italic;
+        font-family: $openSans;
+        
+        &__icon {
+          width: 18px;
+          height: 18px;
+        }
     }
 }
 
-.trade-center {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 170px;    
 
-    &__shadow {
-        background: url('../images/Back.png') no-repeat;
-        background-size: cover;
-        width: 585px;
-        height: 470px;        
-    }
 
-    &__image {
-        background: url('../images/Frame1.png') no-repeat;
-        background-size: cover;
-        width: 630px;
-        height: 470px;
-        position: absolute;
-        left: 215px;
-        top: 70px;
-    }
 
-    &__info {
-        margin-right: 100px;
-    }
-}
 
-.commerce-center {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;  
 
-    &__shadow {
-        background: url('../images/Back2.png') no-repeat;
-        background-size: cover;
-        width: 585px;
-        height: 470px;       
-    }
-
-    &__image {
-        background: url('../images/Frame2.png') no-repeat;
-        background-size: cover;
-        width: 630px;
-        height: 470px;
-        position: absolute;
-        right: 205px;
-        top: 70px;
-    }
-
-    &__info {
-        margin-left: 100px;
-    }
-}
-
-.pre-title__info {
-    font-size: 22px;
-    color: #364258;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.title__info {
-    font-size: 44px;
-    font-weight: 900px;
-    color: #364258;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-}
-
-.text__info {
-    width: 450px;
-    height: 80px;
-    overflow: hidden;
-    margin-bottom: 35px;
-}
-
-.more-dateils-btn {
-    text-transform: uppercase;
-    margin-bottom: 60px;
-    width: 190px;
-    height: 50px;
-}
-
-.more {
-    overflow: auto;
-    height: 150px;
-
-}
 

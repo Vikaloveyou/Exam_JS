@@ -1,0 +1,41 @@
+
+
+.slick-slide {
+    margin: 0 20px;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    content: "";
+}
+
+.slider .slick-arrow.slick-prev {
+    position: absolute;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    background: url('../images/arrow-left.png') no-repeat center;
+}
+
+.slider .slick-arrow.slick-next {
+    position: absolute;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background: url('../images/arrow-right.png') no-repeat center;
+}
+
+.slick-dots li button:before {
+    content: '';
+    border: 2px solid $white;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: 50px;
+    opacity: 1;
+}
+
+.slick-dots li.slick-active button:before  {
+   opacity: 1;
+   background-color: $white;
+}
